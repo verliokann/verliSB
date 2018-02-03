@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+.imgblock {
+  height: 512px;
+  width: 512px;  
+}
+
+.fixheight {
+  height: 300px;
+}
+
+.imgfloatblock {
+  position: relative; 
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.img-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

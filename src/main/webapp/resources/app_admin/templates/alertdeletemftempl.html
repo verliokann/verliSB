@@ -1,0 +1,14 @@
+<div id="alertdelete">
+  	  <div>
+   		Вы точно хотите удалить выбранные данные?   
+  	  </div>
+  	  <div>	 	    
+  	    <% casheroles.each(function(role) {%>
+  	    	<p><%= role.get('id') %><%= role.get('rolename') %><%= role.get('description') %></p>  	    	
+  	    <%});%>  	    	    
+  	  </div> 	  
+      <div>
+		<a href="#" class="btn btn-default btn-sm" id="del-conf">Удалить</a>
+		<a href="#" class="btn btn-default btn-sm" id="btn-roleback-del">Отменить</a>
+	  </div>
+</div>

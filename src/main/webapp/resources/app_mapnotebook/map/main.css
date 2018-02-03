@@ -1,0 +1,55 @@
+
+.container_custom {
+    position: relative;
+}
+
+.on_map {
+    margin-top: 15px;
+    position: absolute;
+    z-index: 10;
+}
+
+#table_object {
+    alignment: right;
+    left: 80%;
+}
+
+.hide {
+    display: none;
+}
+
+
+.block_coord {
+    display: inline;
+}
+
+.glyphicon-heart {
+    font-size: 20px;
+}
+
+.coordinate {
+    display: block;
+}
+
+.size {
+    width: 20px;
+}
+
+.input_coord {
+    width: 100px;
+    height: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.has-feedback .form-control-feedback {
+    top: 25px;
+    right: 0;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    position: absolute;
+    top: 8px;
+}

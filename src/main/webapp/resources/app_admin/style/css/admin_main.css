@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+#userfilter {
+  background-color: #f8f8f8;
+  height: 50px;
+  margin-top: 2px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.unvisibleblock {
+  display: none;
+}
+
+/* Некликабельные ссылки */
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #999999;
+}

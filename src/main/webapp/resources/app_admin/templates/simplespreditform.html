@@ -1,0 +1,37 @@
+   <div id="roleeditform">
+   
+         <% if (mode !== 'editmode') { %>
+      		 <div>
+	  			<span>Название роли: </span>
+	  			<input id="rolenameinput" type="text" size="40"  value=""/>	  
+	 		 </div>
+	 		 <div> 
+	  			<span>Описание: </span>
+	  			<input id="roledescriptioninput" type="text" size="70" value=""/>
+      		 </div>
+           <%} else {%>         
+           <% casheroles.each(function(role) {%>
+  	    	<div>
+	  			<span>Название роли: </span>
+	  			<input id="rolenameinput<%=role.get('id')%>" type="text" size="40"  value="<%= role.get('rolename') %>"/>	  
+	 		</div>
+	 		<div> 
+	  			<span>Описание: </span>
+	  			<input id="roledescriptioninput<%=role.get('id')%>" type="text" size="70" value="<%= role.get('description') %>"/>
+	        </div> 
+	        <div>
+	             ********************************************
+	        </div> 	    	
+  	       <% });%>
+          <%}%>     	     
+      
+      
+	  <div>
+      	<% if (mode !== 'editmode') { %>
+      	   <a href="#" class="btn btn-default btn-sm" id="add-conf">Добавить</a>
+        <%} else {%>   
+      	  <a href="#" class="btn btn-default btn-sm" id="upd-conf">Изменить</a>
+      	<%}%>   
+        <a href="#" class="btn btn-default btn-sm" id="btn-roleback-add-upd" >Отменить</a>
+  	  </div>
+</div>

@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+#simpleReferenceGrid {
+  height: 400px;
+  overflow: auto;
+}
