@@ -6,22 +6,22 @@
     <script src="resources/js/jquery-3.2.1.js" type="text/javascript"></script>
     <script src="resources/js/underscore.js" type="text/javascript"></script>
     <script src="resources/js/backbone.js" type="text/javascript"></script>
-    
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
             type="text/javascript"></script>
     <script src="resources/app_mapnotebook/map/map.js" type="text/javascript"></script>
-    
+
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="resources/js/bootstrap.min.js"></script>
     <link href="resources/app_mapnotebook/map/main.css" rel="stylesheet" media="screen">
-    
+
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"
             type="text/javascript"></script>
 
-    
+
     <script src="resources/js/backbone.localStorage-min.js" type="text/javascript"></script>
 
     <link rel="stylesheet" href="resources/app_mapnotebook/virtual/app.css">
@@ -83,7 +83,7 @@
 </div>
 
 
-<div id= "left_decription" class="container_custom">
+<div id="left_decription" class="container_custom">
     <div class="row">
         <div class="col-md-3" style="z-index: 100; margin-top: 10px;">
             <div id="leftblock" class="panel panel-default" style="display: none;">

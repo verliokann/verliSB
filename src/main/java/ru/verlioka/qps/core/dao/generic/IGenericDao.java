@@ -6,15 +6,15 @@ import java.util.List;
 // E - класс сущности
 // K - тип параметра, определяющего идентификатор объекта (записи в БД)
 
-public interface IGenericDao<E,K> {
-	
-	//Работа с данными
-    public E insert(E entity);    
-    public E update(E entity);      // было void 23072017 
-    public void delete(E entity);    
-    public E find(K key);
-    public <E> List<E> getAll();
-    
+public interface IGenericDao<E, K> {
+
+    //Работа с данными
+    E insert(E entity);
+    E update(E entity);      // было void 23072017
+    void delete(E entity);
+    E find(K key);
+    <E> List<E> getAll();
+
     //Работа с метаданными сущности
-    public List getEntityStructure(); //возвращаем список прикладных полей сущности
+    List getEntityStructure(); //возвращаем список прикладных полей сущности
 }

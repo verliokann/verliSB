@@ -8,36 +8,36 @@ import ru.verlioka.qps.core.models.db.security.EntityUser;
 import ru.verlioka.qps.core.models.rest.User;
 
 public class TokenService {
-	private static final String secretCode = "ae4fc3aa-783c-11e7-b5a5-be2e44b06b34";
-	 
-	 public static String generateToken(EntityUser u) {
-	        Claims claims = Jwts.claims();
-	        claims.put("login", u.getLogin());
-	        claims.put("password", u.getPassword());
+    private static final String secretCode = "ae4fc3aa-783c-11e7-b5a5-be2e44b06b34";
 
-	        return Jwts.builder()
-	                .setClaims(claims)
-	                .signWith(SignatureAlgorithm.HS512, secretCode)
-	                .compact();
-	    }
-	 
-	 public static User parseToken(String token) {
-	        try {
-	            Claims body = Jwts.parser()
-	                    .setSigningKey(secretCode)
-	                    .parseClaimsJws(token)
-	                    .getBody();
+    public static String generateToken(EntityUser u) {
+        Claims claims = Jwts.claims();
+        claims.put("login", u.getLogin());
+        claims.put("password", u.getPassword());
 
-	            User u = new User();
-	            u.setLogin((String) body.get("login"));
-	            u.setPassword((String) body.get("password"));
+        return Jwts.builder()
+                .setClaims(claims)
+                .signWith(SignatureAlgorithm.HS512, secretCode)
+                .compact();
+    }
 
-	            return u;
+    public static User parseToken(String token) {
+        try {
+            Claims body = Jwts.parser()
+                    .setSigningKey(secretCode)
+                    .parseClaimsJws(token)
+                    .getBody();
 
-	        } catch (JwtException e) {
-	            return null;
-	        } catch (ClassCastException e) {
-	        	return null;
-	        }
-	    }
+            User u = new User();
+            u.setLogin((String) body.get("login"));
+            u.setPassword((String) body.get("password"));
+
+            return u;
+
+        } catch (JwtException e) {
+            return null;
+        } catch (ClassCastException e) {
+            return null;
+        }
+    }
 }

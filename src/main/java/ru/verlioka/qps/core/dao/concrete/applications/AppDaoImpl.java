@@ -6,7 +6,6 @@ import ru.verlioka.qps.core.models.db.security.EntityApp;
 
 
 @Repository("appDaoImpl")
-public class AppDaoImpl extends GenericDaoImpl<EntityApp, Integer>
-								implements IAppDao{
+public class AppDaoImpl extends GenericDaoImpl<EntityApp, Integer> implements IAppDao {
 
 }

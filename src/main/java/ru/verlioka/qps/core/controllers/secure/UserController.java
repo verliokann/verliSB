@@ -35,7 +35,7 @@ public class UserController {
 	private IUserService fusi;
 	
 	//запрос информации о пользователе
-	//http://localhost:8080/cmf/FsesUser/userbylogin/user1
+	//http://localhost:8080/qps/FsesUser/userbylogin/user1
 	@RequestMapping(value = "/getuserbylogin/{login}", method = RequestMethod.GET)
 	@ResponseBody
 	public String getuserbylogin(@PathVariable String login)  {
@@ -44,7 +44,7 @@ public class UserController {
 	}
 	
 	//запрос информации о пользователе
-	//http://localhost:8080/cmf/FsesUser/userbyloginjson/admin
+	//http://localhost:8080/qps/FsesUser/userbyloginjson/admin
 	@RequestMapping(value = "/getuserbyloginjson/{login}", method = RequestMethod.GET)
 	@ResponseBody
 	public EntityUser getuserbyloginjson(@PathVariable String login)  {
@@ -53,7 +53,7 @@ public class UserController {
 	}
 
 	//запрос информации о ролях пользователя
-	//http://localhost:8080/cmf/FsesUser/rolesbylogin/user1
+	//http://localhost:8080/qps/FsesUser/rolesbylogin/user1
 	@RequestMapping(value = "/rolesbylogin/{login}", method = RequestMethod.GET)
 	@ResponseBody
 	public String rolesbylogin(@PathVariable String login)  {
@@ -68,7 +68,7 @@ public class UserController {
 	//--------------------------------------------------------------------------------------------------
 	
 	//запрос информации о пользователе  
-	//http://localhost:8080/cmf/FsesUser/user
+	//http://localhost:8080/qps/FsesUser/user
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	@ResponseBody
 	public <EntityUser> List <EntityUser> getUsersjson()  {
@@ -77,8 +77,8 @@ public class UserController {
 	}
 	
 	// Запрос информации о пользователе по идентификатору
-	// Строка вызова http://localhost:8080/cmf/FsesUser/users/{id}
-    // Пример вызова http://localhost:8080/cmf/FsesUser/users/1
+	// Строка вызова http://localhost:8080/qps/FsesUser/users/{id}
+    // Пример вызова http://localhost:8080/qps/FsesUser/users/1
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)	 
 	public @ResponseBody EntityUser findUserjson(@PathVariable int id) {	  	  
 	   EntityUser u = fusi.find(id);	   

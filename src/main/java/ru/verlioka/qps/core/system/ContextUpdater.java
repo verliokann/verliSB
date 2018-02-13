@@ -5,17 +5,17 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class ContextUpdater {
-	public static void Refresh() {
-		ApplicationContext ctx = new FileSystemXmlApplicationContext();		
-		((ConfigurableApplicationContext)ctx).refresh();
-	    }
-	
-	public static String getconfig (String beanconfigname){
-		String s="";
-		ApplicationContext ctx = new FileSystemXmlApplicationContext(beanconfigname);
-	
-		return s;
-	}
-	
+    public static void Refresh() {
+        ApplicationContext ctx = new FileSystemXmlApplicationContext();
+        ((ConfigurableApplicationContext) ctx).refresh();
+    }
+
+    public static String getconfig(String beanconfigname) {
+        String s = "";
+        ApplicationContext ctx = new FileSystemXmlApplicationContext(beanconfigname);
+
+        return s;
+    }
+
 }
 
