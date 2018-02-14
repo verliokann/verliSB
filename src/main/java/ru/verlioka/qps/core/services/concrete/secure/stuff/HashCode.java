@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 @Service("hashCode")
 public class HashCode implements IHashCode {
 
- public String getHashPassword(String password)  {
-  BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-  String hashedPassword = passwordEncoder.encode(password);
+    public String getHashPassword(String password) {
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String hashedPassword = passwordEncoder.encode(password);
 
-  System.out.println(hashedPassword);
-  return hashedPassword;
- }
+        System.out.println(hashedPassword);
+        return hashedPassword;
+    }
 
 }

@@ -6,7 +6,6 @@ import ru.verlioka.qps.core.models.db.security.EntityRole;
 
 
 @Repository("roleDaoImpl")
-public class RoleDaoImpl extends GenericDaoImpl<EntityRole, Integer>
-								implements IRoleDao{
+public class RoleDaoImpl extends GenericDaoImpl<EntityRole, Integer> implements IRoleDao {
 
 }

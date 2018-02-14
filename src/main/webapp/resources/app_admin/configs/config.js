@@ -2,15 +2,15 @@
  * http://usejsdoc.org/
  */
 requirejs.config({
-	baseUrl: 'http://localhost:8080/cmf/resources',
-	paths: { 
+	baseUrl: 'http://localhost:8080/qps/resources',
+	paths: {
 		"jquery"    	: 'js/jquery-3.2.1',
 		"underscore"	: 'js/underscore',
 		"json2"     	: 'js/json2',
-		"backbone"  	: 'js/backbone',		
-		"text"      	: 'js/text',	
+		"backbone"  	: 'js/backbone',
+		"text"      	: 'js/text',
 		"rivets"      	: 'js/rivets.min',
-		"rivetsconf" 	: 'js/rivets.backbone.config',		
+		"rivetsconf" 	: 'js/rivets.backbone.config',
 		"role"      	: 'app_admin/js/models/role',
 		"group"      	: 'app_admin/js/models/group',
 		"user"      	: 'app_admin/js/models/user',
@@ -22,7 +22,7 @@ requirejs.config({
 		"activecollection" 	: 'app_admin/js/collections/activecollection',
 		"contents"      : 'app_admin/js/collections/contents',
 		"v_sprform" 	: 'app_admin/js/views/v_role_ed_form',
-		"roleeditform" 	: 'app_admin/js/views/roleeditform',		
+		"roleeditform" 	: 'app_admin/js/views/roleeditform',
 		"roledeleteform": 'app_admin/js/views/roledeleteform',
 		"groupeditform"	: 'app_admin/js/views/groupeditform',
 		"groupdeleteform": 'app_admin/js/views/groupdeleteform',
@@ -37,13 +37,13 @@ requirejs.config({
 		"cudcontrol"    : 'app_admin/js/views/cudcontrol',
 		"gridcolumns"   : 'app_admin/js/views/gridcolumns',
 		"backgrid"  	: 'components/backgrid-0.3.7/lib/backgrid',
-		"backbone.paginator" 		: 'components/backbone.paginator-master/lib/backbone.paginator',	
+		"backbone.paginator" 		: 'components/backbone.paginator-master/lib/backbone.paginator',
 		"bgpaginator"   : 'components/backgrid-paginator-master/backgrid-paginator.min',
-		"bgfilter"    	: 'components/backgrid-filter-master/backgrid-filter.min',		
+		"bgfilter"    	: 'components/backgrid-filter-master/backgrid-filter.min',
 		"bgselectall"  	: 'components/backgrid-select-all-master/backgrid-select-all',
-		"bbserv"       	: 'app_admin/js/bbserv',		
+		"bbserv"       	: 'app_admin/js/bbserv',
 		"app"       	: 'app_admin/js/main'
-	},	
+	},
 	shim: {
 		 underscore: {
 		 exports: "_"
@@ -51,8 +51,8 @@ requirejs.config({
 		 backbone: {
 		  deps: ["jquery", "underscore", "json2"],
 		  exports: "Backbone"
-		 } 
-	},			 
+		 }
+	},
 	waitSeconds: 15
  });
 
