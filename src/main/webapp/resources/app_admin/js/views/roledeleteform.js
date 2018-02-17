@@ -1,11 +1,11 @@
 define(['backbone', 'rolepaggrid', 'roles', 'role', 'text!app_admin/templates/roledeleteform.tpl'], 
 		function(BackBone, RolePagGrid,  Roles, Role, RDLF){
 	
-	ZUI.loadCss('http://localhost:8080/qps/resources/components/backgrid-0.3.7/lib/backgrid.css');
-	ZUI.loadCss('http://localhost:8080/qps/resources/components/backgrid-paginator-master/backgrid-paginator.css');
-	ZUI.loadCss('http://localhost:8080/qps/resources/components/backgrid-filter-master/backgrid-filter.css');
-	ZUI.loadCss('http://localhost:8080/qps/resources/app_admin/style/css/simplereferencegrid.css');
-	ZUI.loadCss('http://localhost:8080/qps/resources/components/backgrid-select-all-master/backgrid-select-all.min.css');
+	ZUI.loadCss('resources/components/backgrid-0.3.7/lib/backgrid.css');
+	ZUI.loadCss('resources/components/backgrid-paginator-master/backgrid-paginator.css');
+	ZUI.loadCss('resources/components/backgrid-filter-master/backgrid-filter.css');
+	ZUI.loadCss('resources/app_admin/style/css/simplereferencegrid.css');
+	ZUI.loadCss('resources/components/backgrid-select-all-master/backgrid-select-all.min.css');
 
 	App.Views.RoleDeleteForm = Backbone.View.extend({
 	        className: "modal-content",

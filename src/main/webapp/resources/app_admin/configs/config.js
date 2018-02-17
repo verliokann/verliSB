@@ -2,7 +2,7 @@
  * http://usejsdoc.org/
  */
 requirejs.config({
-	baseUrl: 'http://localhost:8080/qps/resources',
+    baseUrl: 'resources',
 	paths: {
 		"jquery"    	: 'js/jquery-3.2.1',
 		"underscore"	: 'js/underscore',

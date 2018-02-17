@@ -24,7 +24,7 @@ import java.util.List;
 public class ReportGenerator {
 
     private static final String REPORT_TEMPLATE_NAME = "template.docx";
-    private static final String REPORT_TEMPLATE_PATH = "/Reports/" + REPORT_TEMPLATE_NAME;
+    private static final String REPORT_TEMPLATE_PATH = "/reports/" + REPORT_TEMPLATE_NAME;
 
     public byte[] generate(List<EntityGroup> groups) throws IOException {
         ReportBuilder reportBuilder = new ReportBuilder();
